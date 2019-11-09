@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #e37682 15%, #5f4d92 80%) no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+
+::selection{
+    color: #fff;
+    background: #eb243b;
+}
+
+.container{
+    width: 90vw;
+    margin: 10px auto;
+    text-align: center;
+}
+
+header{
+    padding-top: 2em;
+}
+
+header > img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: scale(0.5);
+    animation-name: img;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+header > h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+    opacity: 0;
+    animation-name: header;
+    animation-delay: 1.1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header{
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.description{
+    font-size: 1.1em;
+    margin-bottom: 3em;
+    opacity: 0;
+    animation-name: description;
+    animation-delay: 1.2s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes description{
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+strong{
+    color: #fff;
+}
+
+main{
+    background: #fff;
+    border-radius: 8px;
+}
+
+nav{
+    display: none;
+}
+
+#my-projects{
+    border-bottom: 1px solid #ddd;
+}
+
+#work-experience{
+    padding-bottom: 2em;
+}
+
+#education{
+    padding-bottom: 2em;
+}
+
+main h2{
+    color: #636363;
+    font-size: 1.8em;
+    font-weight: lighter;
+    padding-top: 0.8em;
+}
+
+main h2:after{
+    display: block;
+    content: '';
+    width: 4em;
+    height: 2px;
+    margin: 0.5em auto 1em auto;
+    background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+
+.projects{
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0 0 1em 0;
+}
+
+.projects > li{
+    margin-bottom: 1em;
+    border-bottom: 1px solid #a89cc8;
+}
+
+.projects > li > img{
+    border: 1px solid #a89cc8;
+    border-radius: 50%;
+    padding: 0.35em;
+    margin: 1em 0;
+}
+
+.projects h3{
+    color: #636363;
+    font-weight: lighter;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+}
+
+.projects p{
+    color: #636363;
+    padding: 1em 0;
+}
+
+.projects a{
+    display: block;
+    color: #636363;
+    text-decoration: none;
+    margin: 1em auto;
+    width: fit-content;
+    border-bottom: 1px dotted #636363;
+}
+
+.projects a:hover{
+    cursor: pointer;
+}
+
+.projects > li:last-child{
+    margin-bottom: 1em;
+    border: none;
+}
+
+.work{
+    color: #636363;
+    margin-bottom: 1em;
+}
+
+.education{
+    color: #636363;
+    margin-bottom: 1em;
+}
+
+footer{
+    margin: 1em 0 5em;
+}
+
+footer > h2{
+    font-size: 1.8em;
+    font-weight: lighter;
+    padding: 0.6em 0 0.3em 0;
+}
+
+footer > p{
+    padding: 0.4em 0;
+}
+
+.social{
+    margin: 1em 0;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 0.65em;
+    margin: 0 0.5em;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+@media(min-width: 768px){
+    header > h1{
+        font-size: 4em;
+        font-weight: normal;
+        margin: 0.8em 0;
+    }
+
+    .description{
+        margin-bottom: 5em;
+    }
+
+    nav{
+        display: block;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 1em;
+        color: #636363;
+        background: #f7f7f7;
+    }
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    nav > ul{
+        list-style-type: none;
+    }
+
+    nav > ul > li{
+        display: inline-block;
+        margin: 0 0.3em;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #636363;
+        line-height: 2em;
+        padding: 0 1em;
+        cursor: pointer;
+    }
+
+    main h2{
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+
+    main h2:after{
+        width: 4em;
+        height: 2px;
+        margin: 0.3em auto 1em auto;
+        background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .projects h3{
+        font-weight: normal;
+        font-size: 1.8em;
+    }
+
+    .projects > li{
+        border: none;
+    }
+
+    footer > h2{
+        font-size: 2.5em;
+        font-weight: normal;
+    }
+}

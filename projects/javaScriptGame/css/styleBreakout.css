@@ -1,0 +1,19 @@
+*{
+  padding:0;
+  margin:0;
+  background-color:#160131;
+}
+canvas{
+  margin:0px auto;
+  display:block;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 45px;
+}
+h1{
+	text-align: center;
+	font-family: impact;
+	font-size: 3em;
+	margin: 30px;
+	color:#ff6c00;
+	text-shadow: 0px 0px 20px;
+}

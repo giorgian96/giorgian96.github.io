@@ -143,9 +143,15 @@ main h2:after{
     border-bottom: 1px solid #a89cc8;
 }
 
+.projects > li:last-child{
+    margin-bottom: 1em;
+    border: none;
+}
+
 .projects > li > img{
     border: 1px solid #a89cc8;
     border-radius: 50%;
+    opacity: 0.95;
     padding: 0.35em;
     margin: 1em 0;
 }
@@ -173,11 +179,6 @@ main h2:after{
 
 .projects a:hover{
     cursor: pointer;
-}
-
-.projects > li:last-child{
-    margin-bottom: 1em;
-    border: none;
 }
 
 .work{
@@ -259,6 +260,14 @@ footer > p{
         line-height: 2em;
         padding: 0 1em;
         cursor: pointer;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s;
+    }
+
+    nav a:hover{
+        background: #eb243b;
+        color: #000;
+        border-radius: 16px;
     }
 
     main h2{
@@ -275,7 +284,7 @@ footer > p{
 
     .projects{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1em;
     }
 
@@ -286,10 +295,34 @@ footer > p{
 
     .projects > li{
         border: none;
+        box-shadow: 0px 0px 5px 1px rgb(168, 156, 200, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
     }
 
     footer > h2{
         font-size: 2.5em;
         font-weight: normal;
+    }
+}
+
+@media(min-width: 1280px){
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1920px){
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(min-width: 2560px){
+    .projects{
+        grid-template-columns: repeat(6, 1fr);
     }
 }

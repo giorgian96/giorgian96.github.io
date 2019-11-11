@@ -1,0 +1,19 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #222;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+}
+h1{
+  font-size: 500%;
+  margin-bottom: 5%;
+}
+label{
+  font-size: 250%;
+}
+#rezultat{
+  font-size:200%;
+}

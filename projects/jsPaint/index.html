@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint App</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="toolbox">
+        <h1>Toolbox</h1>
+        <div class="tool" id="brush">Brush</div>
+        <div class="tool" id="spray">Spray</div>
+        <div class="tool" id="text">Text</div>
+        <div class="tool" id="fill">Fill(nyi)</div>
+        <div class="tool" id="eraser">Eraser</div>
+        <div class="tool" id="size">Size
+            <input type="number" min="1" max="200" value="1">
+        </div>
+        <div class="tool" id="color">Color
+            <input type="color" >
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

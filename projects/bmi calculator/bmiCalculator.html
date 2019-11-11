@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <link rel="stylesheet" href="css/bmiStyle.css">
+    <script src="js/bmiJS.js"></script>
+  </head>
+  <body>
+    <div class='container-fluid'>
+      <div class='row'>
+        <h1 class="text-center">BMI Calculator</h1>
+      </div>
+      <form>
+        <div class='form-group'>
+          <label>Height</label>
+          <input type='text' name="height" placeholder="insert your height here (cm or meters)" id='height' class="form-control input-lg">
+        </div>
+        <div class='form-group'>
+          <label>Weight</label>
+          <input type='text' name="weight" placeholder="insert your weight here (kg)" id='weight' class="form-control input-lg">
+        </div>
+        <div class="text-center">
+          <p class="btn btn-default btn-lg" id='submit'>Calculate</p>
+        </div>
+      </form>
+      <br>
+      <p id="rezultat" class="text-center"></p>
+    </div>
+  </body>
+</html>

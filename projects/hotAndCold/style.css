@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    display: block;
+    position: absolute; 
+    background: rgba(160, 80, 80, 0.25);
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}

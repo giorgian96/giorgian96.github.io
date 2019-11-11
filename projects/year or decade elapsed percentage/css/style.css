@@ -1,0 +1,52 @@
+body{
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ed9268;
+  color: #333;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+#appMenu{
+  text-align: center;
+}
+button{
+  width: 30em;
+  background-color: #ed9268;
+  border:none;
+  padding: 1em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color:#eee;
+}
+button:hover{
+  cursor: pointer;
+  text-shadow: 0px 0px 3px;
+}
+p{
+  text-align: center;
+}
+#currentDateText{
+  font-size: 3em;
+  line-height: 1em;
+  font-family: 'Bungee Inline', cursive;
+}
+progress{
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: block;
+	margin: auto;
+	width: 20em;
+	height: 2em;
+}
+progress::-webkit-progress-bar{
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border: 2px solid #8538e2;
+  border-radius: 3px;
+}
+progress::-webkit-progress-value{
+	background-color:#8538e2;
+}

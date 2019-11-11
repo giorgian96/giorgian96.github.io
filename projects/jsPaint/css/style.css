@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    font-family: 'Concert One', sans-serif;
+    background-color: #7391b5;
+}
+h1{
+    margin: 0;
+    background-color: #c00;
+    color:white;
+    border-radius: 10px 10px 0 0;
+    padding: 0 10px 0 10px;
+    cursor: move;
+}
+#toolbox{
+    text-align: center;
+    position: absolute;
+    float: left;
+}
+.tool{
+    padding: 10px 0 10px 0;
+    border-style: solid;
+    border-color: #c00;
+    border-width: 0 1px 1px 1px;
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+.tool:hover{
+    background-color: #c00;
+    text-shadow: 0 0 1px;
+}
+canvas{
+    float: right;
+    border: 1px dashed black;
+    margin: 20px 20vw;
+    background-color: white;
+}

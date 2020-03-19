@@ -313,6 +313,18 @@ footer > p{
     .projects{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .projects > li > img{
+        margin: 0;
+    }
+
+    .projects h3{
+        margin: 0;
+    }
+
+    .projects a{
+        margin: 0.35em;
+    }
 }
 
 @media(min-width: 1920px){
